@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import { Header, Sidebar } from "@/components";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -9,7 +10,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-   
+      <main>
+        {/* Header */}
+        <Header />
+
+        {/* Sidebar */}
+        <div className="hidden md:inline">
+          <Sidebar />
+        </div>
+      </main>
     </>
-  )
+  );
 }

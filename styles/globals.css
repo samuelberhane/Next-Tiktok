@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    @apply w-1 h-1;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-600;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#884545] rounded-md;
+  }
+}
